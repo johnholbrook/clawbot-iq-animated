@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Clawbot IQ Animated Build Instructions</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Clawbot IQ Animated Build Instructions</h1>
+        <div class="card m-3">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col">
+                        <span class="input-group">
+                            <button class="btn btn-primary" id="prev-step">◀</button>
+                            <span class="input-group-text" id="this-step">Step 1</span>
+                            <button class="btn btn-primary" id="next-step">▶</button>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <span class="input-group float-end" style="width:fit-content;">
+                            <span class="input-group-text">Jump to step:</span>
+                            <input type="text" class="form-control" id="jump-step">
+                            <button class="btn btn-success" id="jump-go">Go</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <img src="./assets/png/claw-parts-48.png" class="card-img-top" id="parts">
+                <br/>
+                <video id="anim" controls autoplay muted loop>
+                    <source src="./assets/mp4/Step48.mp4" type="video/mp4" class="mx-auto" id="anim-src">
+                </video>
+            </div>
+        </div>
+        <div class="mb-3">
+            <small>
+                Animations by <a href="https://www.vexforum.com/t/404-error-clawbot-iq-animated-build-instructions/64073/12?u=holbrook">VEX Robotics</a>,
+                this page by <a href="http://www.johnholbrook.us">John Holbrook</a>.
+            </small>
+        </div>
+    </body>
+</html>
